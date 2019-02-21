@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        table,th,td{
+            border: 2px solid orangered;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+        table{
+            width: 100%;
+            box-shadow: 0 0 15px black;
+        }
+        #orange thead{
+            background-color: orangered;
+            color: white;
+        }
+        #orange tbody{
+            background-color: lightsalmon;
+        }
+        #blue thead{
+            background-color: blue;
+            color: white;
+        }
+        #blue tbody{
+            background-color: lightblue;
+        }
+        #green thead{
+            background-color: green;
+            color: white;
+        }
+        #green tbody{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Table -->
+    <h2> Simple Table </h2>
+<table>
+    <thead>
+        <tr>
+            <th>Sr.No</th>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th>COMPANY</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rajan</td>
+            <td>Tech Lead</td>
+            <td>Infosys</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>Manager</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>Sr. Manager</td>
+            <td>Infotech</td>
+        </tr>
+    </tbody>
+</table>
+
+    <!-- Table with Col Span -->
+    <h2> Table with Col Span </h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Sr.No</th>
+            <th>NAME</th>
+            <th colspan="2">DESIGNATION</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rajan</td>
+            <td>Tech Lead</td>
+            <td>Infosys</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>Manager</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>Sr. Manager</td>
+            <td>Infotech</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Table With Row Span -->
+    <h2> Table With Row Span </h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Sr.No</th>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th>COMPANY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="3">1</td>
+            <td>Rajan</td>
+            <td>Tech Lead</td>
+            <td>Infosys</td>
+        </tr>
+        <tr>
+            <td>Williams</td>
+            <td>Manager</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Sr. Manager</td>
+            <td>Infotech</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Custom Table with CSS -->
+    <h2> Custom Table with CSS </h2>
+
+    <table id="orange">
+        <thead>
+        <tr>
+            <th>Sr.No</th>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th>COMPANY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rajan</td>
+            <td>Tech Lead</td>
+            <td>Infosys</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>Manager</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John</td>
+            <td>Sr. Manager</td>
+            <td>Infotech</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Custom Table with CSS -->
+    <h2> Custom Table with CSS </h2>
+
+    <table id="blue">
+        <thead>
+        <tr>
+            <th>Sr.No</th>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th>COMPANY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rajan</td>
+            <td>Tech Lead</td>
+            <td>Infosys</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>Manager</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John</td>
+            <td>Sr. Manager</td>
+            <td>Infotech</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Custom Table with CSS -->
+    <h2> Custom Table with CSS </h2>
+
+    <table id="green">
+        <thead>
+        <tr>
+            <th>Sr.No</th>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th>COMPANY</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Rajan</td>
+            <td>Tech Lead</td>
+            <td>Infosys</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Williams</td>
+            <td>Manager</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John</td>
+            <td>Sr. Manager</td>
+            <td>Infotech</td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Input Attributes</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+        }
+        h2{
+            font-size: 14px;
+        }
+        form{
+            background: linear-gradient(to right,black,white,black);
+            padding: 15px;
+            box-shadow: 0 0 15px black;
+            color: white;
+            width: 400px;
+        }
+        input:focus{
+            background: lightseagreen;
+            outline: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px green;
+            border: 2px solid forestgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 align="center">HTML Input Attributes</h1>
+
+    <!-- Input Attribute Value --->
+    <h2>Input Attribute 'Value'</h2>
+<form>
+    <label>Username</label>
+    <input type="text" value="Shubh" id="abc">
+    <button type="button" onclick="alert(document.querySelector('#abc'))">GET</button>
+</form>
+    <!-- Input Attribute readonly --->
+    <h2>Input Attribute 'readonly'</h2>
+<form>
+    <label>Username</label>
+    <input type="text" value="Shubham" readonly>
+</form>
+
+
+    <!-- Input Attribute disabled --->
+    <h2>Input Attribute 'disabled'</h2>
+<form>
+    <label>Username</label>
+    <input type="text"  disabled>
+    <input type="submit" value="Submit" disabled>
+    <input type="checkbox" value="Remember" disabled>Yes
+</form>
+
+
+    <!-- Input Attribute size --->
+    <h2>Input Attribute 'size'</h2>
+<form>
+    <label>Username</label>
+    <input type="text" size="50">
+</form>
+    <!-- Input Attribute rows , cols --->
+    <h2>Input Attribute 'rows' , 'cols'</h2>
+<form>
+    <label>Your Comments</label>
+    <textarea rows="5" cols="40" maxlength="100"></textarea>
+</form>
+
+    <h1 align="center">HTML 5 Input Attributes</h1>
+
+
+    <!-- Input Attribute required --->
+    <h2>Input Attribute 'required'</h2>
+    <form>
+        <label>USername *</label>
+        <input type="text" required>
+        <input type="submit" value="Submit" >
+    </form>
+
+    <!-- Input Attribute novalidate --->
+    <h2>Input Attribute 'novalidate'</h2>
+<form novalidate>
+    <label>Enter your Website</label>
+    <input type="url" required autofocus>
+    <input type="submit" value="Submit">
+
+</form>
+
+    <!-- Input Attribute autofocus --->
+    <h2>Input Attribute 'autofocus'</h2>
+<form>
+    <label>Username</label>
+    <input type="text" autofocus>
+    <input type="submit" value="Submit">
+</form>
+
+    <!-- Input Attribute pattern --->
+    <h2>Input Attribute 'pattern'</h2>
+<form>
+    <label>twitter user name</label>
+    <input type="text" pattern="^[A-Za-z0-9_]{1,15}$" required>
+    <input type="submit" value="Submit">
+</form>
+
+    <!-- Input Attribute placeholder --->
+    <h2>Input Attribute 'placeholder'</h2>
+<form>
+    <input type="text" placeholder="Enter your name">
+    <input type="submit" value="Submit">
+</form>
+
+<br><br><br>
+</body>
+</html>
